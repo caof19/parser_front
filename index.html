@@ -1,1 +1,68 @@
-<html><head><link rel="stylesheet" href="style.css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.min.css"/></head><body><form method="GET"><section class="category"><p>Выбор категории</p><input type="text" placeholder="Введите категорию" id="search"/><ul id="cat"><li class="cat" data-val="First category">First category<ul><li class="precat" data-val="First precat">First precat</li><li class="precat" data-val="Second precat">Second precat</li><li class="precat" data-val="Third precat">Third precat</li><li class="precat" data-val="Fourth precat">Fourth precat</li></ul></li><li class="cat" data-val="Second category">Second category</li><li class="cat" data-val="Third category">Third category</li><li class="cat" data-val="Fourth category">Fourth category</li></ul></section><section class="column"><p>Выбрать колонку</p><select id="col" multiple="multiple"><option>First column</option><option>Second column</option><option>Third column</option><option>Forth column</option><option>Fifth column</option><option>Sixth column</option></select></section><section class="sort"><p>Выбрать сортировку</p><select id="sort"><option value="name">Name</option><option value="date">Date parsing</option><option value="price">Price</option></select><p>Выбрать дату</p><input id="date" type="date"/></section><section class="sortBy"><p>Выбрать направление сортировки</p><label for="ASC"><input type="radio" name="condition" value="ASC" checked="checked" id="ASC"/>ASC</label><label for="DESC"><input type="radio" name="condition" value="DESC" id="DESC"/>DESC</label></section><section class="quan"><p>Введите колличество выборки</p><input id="quantity" type="number" name="quantity" min="1" value="1"/><input class="sub" type="submit" value="Отправить"/></section></form><section class="result"></section></body><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script><script src="script.js"></script><script></script></html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.min.css"/>
+  </head>
+  <body>
+    <form method="GET">
+      <section class="category">
+        <p>Выбор категории</p>
+        <input type="text" placeholder="Введите категорию" id="search"/>
+        <ul id="cat">
+          <li class="cat" data-val="First category">First category
+            <ul>
+              <li class="precat" data-val="First precat">First precat</li>
+              <li class="precat" data-val="Second precat">Second precat</li>
+              <li class="precat" data-val="Third precat">Third precat</li>
+              <li class="precat" data-val="Fourth precat">Fourth precat</li>
+            </ul>
+          </li>
+          <li class="cat" data-val="Second category">Second category</li>
+          <li class="cat" data-val="Third category">Third category</li>
+          <li class="cat" data-val="Fourth category">Fourth category</li>
+        </ul>
+      </section>
+      <section class="column">
+        <p>Выбрать колонку</p>
+        <select id="col" multiple="multiple">
+          <option>First column</option>
+          <option>Second column</option>
+          <option>Third column</option>
+          <option>Forth column</option>
+          <option>Fifth column</option>
+          <option>Sixth column</option>
+        </select>
+      </section>
+      <section class="sort">
+        <p>Выбрать сортировку</p>
+        <select id="sort">
+          <option value="name">Name</option>
+          <option value="date">Date parsing</option>
+          <option value="price">Price</option>
+        </select>
+        <p>Выбрать дату</p>
+        <input id="date" type="date"/>
+      </section>
+      <section class="sortBy">
+        <p>Выбрать направление сортировки</p>
+        <label for="ASC">
+          <input type="radio" name="condition" value="ASC" checked="checked" id="ASC"/>ASC
+        </label>
+        <label for="DESC">
+          <input type="radio" name="condition" value="DESC" id="DESC"/>DESC
+        </label>
+      </section>
+      <section class="quan">
+        <p>Введите колличество выборки</p>
+        <input id="quantity" type="number" name="quantity" min="1" value="1"/>
+        <input class="sub" type="submit" value="Отправить"/>
+      </section>
+    </form>
+    <section class="result"></section>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script></script>
+</html>
